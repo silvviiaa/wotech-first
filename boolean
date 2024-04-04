@@ -1,0 +1,73 @@
+ boolean
+
+''public class Main {
+  public static void main(String[] args) {
+
+    //   AND
+    // I will be able to open the doors, if the first key is unlocked AND if the second key is unlocked.
+
+    boolean isDoorLocked = true;
+    boolean isKey1Unlocked = true;
+    boolean isKey2Unlocked = true;
+
+    if (isKey1Unlocked && isKey2Unlocked) {
+      System.out.println("Door opened!");
+    } else {
+      System.out.println("Wrong key!");
+    }
+
+     // I will log you in if your username is correct AND if your password is correct.
+
+    String username = "admin";
+    String password = "secret";
+
+    boolean isUserLogIn = username == "admin" && password == "secret"; 
+
+    if (isUserLogIn) {
+      System.out.println("Logged in!");
+    }
+
+    // OR
+    // I will buy eggs if they will be on the sale OR they will cost less than 2.50
+
+    int eggPrice = 1;
+    boolean onSale = true;
+
+    if (eggPrice < 2.50 || onSale) {
+      System.out.println("I will buy the eggs!");
+    }
+
+     // OR
+     // I will go running, if I will have enough energy OR if the weather is shiny.
+
+    boolean isEnoughEnergy = true;
+    boolean isWeatherShiny = true;
+
+    if (isEnoughEnergy || isWeatherShiny) {
+      System.out.println("I will go running!");
+    } else {
+      System.out.println("Stay at home and take a nap!");
+    }
+
+    // AND OR
+    // I will go in this restaurant if there is going to be squid OR shrimps, AND I need there to have white wine as well
+
+    boolean isSquidOnTheMenue = true;
+    boolean isShrimpsOnTheMenue = false;
+    boolean isWhiteWine = true;
+
+    if ((isSquidOnTheMenue || isShrimpsOnTheMenue) && isWhiteWine) {
+      System.out.println("I will go in this restaurant!");
+    } else {
+      System.out.println("Let's choose another plase");
+    }
+
+    // NOT
+     //  I will go to a restaurant, if the waitress is NOT rude
+
+    boolean isWaitressRude = true;
+    if (!isWaitressRude);{
+      System.out.println("I will go to a restaurant!");
+    }   
+  }
+}    '''
